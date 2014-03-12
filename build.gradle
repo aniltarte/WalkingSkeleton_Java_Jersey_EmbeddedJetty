@@ -1,0 +1,33 @@
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'idea'
+apply plugin: 'java-library-distribution'
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'ServerStarter'
+    }
+}
+
+distributions {
+    main{
+        baseName = 'WalkingSkeleton'
+    }
+}
+
+dependencies {
+    compile 'javax.ws.rs:javax.ws.rs-api:+'
+
+    compile 'org.glassfish.jersey.containers:jersey-container-jetty-http:+'
+    compile 'org.glassfish.jersey.media:jersey-media-json-jackson:+'
+
+    compile 'org.springframework:spring-context:+'
+
+    compile 'org.eclipse.jetty:jetty-servlet:+'
+
+    testCompile "junit:junit:+"
+}
