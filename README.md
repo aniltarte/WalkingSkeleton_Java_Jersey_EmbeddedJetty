@@ -5,8 +5,8 @@ No xml configuration, doing all wiring done programmatically.
 
 ###Setup###
 1. clone the project
-2. execute command "gradle clean build distZip", this will produce the java application distribution including dependencies (.zip file)
-3. execute command "./run.sh", this is start the embedded jetty http server on http://localhost:9090/
+2. execute command "gradle clean build distZip", this will produce a java application distribution including its dependencies (.zip file)
+3. execute command "./run.sh", this will start the embedded http server(Jetty) at http://localhost:9090/
 4. You can access below urls
     * http://localhost:9090/ping
     * http://localhost:9090/todo
