@@ -1,7 +1,7 @@
 WalkingSkeleton_Java_Jersey_EmbeddedJetty
 -----------------------------------------
 Simple RESTful application setup using Java, Jersey and embedded Jetty.
-No xml configuration, doing all wiring done programmatically.
+No xml configuration, all wiring done programmatically.
 
 ###Setup###
 1. clone the project
