@@ -16,6 +16,3 @@ No xml configuration, all wiring done programmatically.
     * To auto complete the service name, create a symbolic link in /etc/init.d e.g ln -s /etc/init/walking-skeleton-rest.conf walking-skeleton-rest
     * Now you can start/stop service using command  service walking-skeleton-rest (start/stop/restart/status)
 
-### TODO ###
-1. Use SOAP web service to access the data via repository layer
-
